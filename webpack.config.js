@@ -4,12 +4,18 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 
 module.exports = {
+  mode: 'development',
   entry: './src/index.js',
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
 // path.resolve is a method provided by Node.js's path module. It's used to resolve/combine a sequence of path segments into an absolute path.
   },
+  devServer: { //devServer option allows you to configure the behavior of the webpack development server
+    static: './dist',
+    watchFiles: ['template.html']
+  },
+  devtool: 'inline-source-map',
   plugins: [
     new HtmlWebpackPlugin({
         template: './src/index.html',
