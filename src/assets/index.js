@@ -1,4 +1,7 @@
 // entry file
 import './home/style.css';
 import './reset.css';
-console.log('project starts now!')
+
+import { appendElements } from './home/home';
+
+appendElements();
