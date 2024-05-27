@@ -13,7 +13,9 @@ module.exports = {
   },
   devServer: { //devServer option allows you to configure the behavior of the webpack development server
     static: './dist',
-    watchFiles: ['template.html']
+    watchFiles: ['src/**/*'],
+    hot: true, // Enable Hot Module Replacement
+    open: true, // Automatically open the browser
   },
   devtool: 'inline-source-map',
   plugins: [
