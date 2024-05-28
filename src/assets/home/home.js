@@ -6,20 +6,16 @@ function appendElements(){
     
 
     let firstSentence = document.createElement('p');
-    firstSentence.textContent = `Welcome to WOMBOCOMBO`;
+    firstSentence.textContent = `Welcome to WOMBO COMBO`;
+    firstSentence.classList.add('firstSentence');
 
     let secondSentence = document.createElement('p');
-    secondSentence.textContent = 'your destination for finger-licking soul food!';
-    
+    secondSentence.textContent = 'Your destination for finger-licking soul food!';
+    secondSentence.classList.add('secondSentence');
 
-    let thirdSentence = document.createElement('p');
-    thirdSentence.textContent = `We specialize in crafting an array of exciting and
-    mouth-watering meat dishes, ranging from succulent chicken and savory pork to juicy beef and delectable seafood.`;
 
     
-
-    
-    textAreaDiv.append(firstSentence,secondSentence, thirdSentence,);
+    textAreaDiv.append(firstSentence,secondSentence);
 
     contentSection.appendChild(textAreaDiv);
 }
