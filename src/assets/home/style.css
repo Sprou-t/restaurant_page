@@ -48,6 +48,10 @@ header{
     font-weight: 900;
     font-size: 1.6rem;
 }
+
+.icon_section>p:nth-child(2){
+    color: orange;
+}
 ul{
     display: flex;
     justify-content: flex-end;
@@ -68,7 +72,7 @@ li{
 }
 
 .textArea{
-    width:45ch;
+    width:60ch;
     text-align: center;
 }
 
@@ -76,7 +80,7 @@ li{
     font-family: 'cursive_font';
     font-weight: 600;
     font-size: 1.5rem;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
 }
 
 .secondSentence{
