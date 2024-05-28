@@ -1,0 +1,12 @@
+ul>li.active{
+    color: orange;
+    border-bottom: orange 7px solid;
+    background-color: rgba(255, 255, 255, 0.434);
+    z-index: 2;
+}
+
+ul li:is(:hover):not(.active){
+    background-color: rgba(255, 255, 255, 0.3);
+    border-bottom:rgb(215, 209, 209) 7px solid;
+    cursor: pointer;
+}
