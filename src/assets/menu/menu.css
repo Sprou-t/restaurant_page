@@ -29,6 +29,7 @@
 .menuCard .price{
     margin: auto auto; /* centers box */
     background-color: orange;
+    font-weight: 700;
     width: 50px;
     border-radius: 5px;
 }

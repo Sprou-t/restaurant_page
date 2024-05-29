@@ -19,6 +19,13 @@ import steakImage from './menu/pexels-valeriya-20323431.jpg'
 const navItems = document.querySelectorAll('ul li');
 const pageContent = document.querySelector('#content')
 
+// Set the initial active class to the Home item
+navItems.forEach(item => {
+    if (item.textContent === 'Home') {
+        item.classList.add('active');
+    }
+});
+
 // Load the home page by default when the website is first visited
 loadHomePage();
 
