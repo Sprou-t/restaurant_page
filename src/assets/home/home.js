@@ -1,4 +1,4 @@
-function appendElements(){
+function loadHomePage(){
     let contentSection = document.querySelector('#content');
     let textAreaDiv = document.createElement('div');
     textAreaDiv.classList.add('textArea');
@@ -19,4 +19,4 @@ function appendElements(){
 
     contentSection.appendChild(textAreaDiv);
 }
-export {appendElements};
+export {loadHomePage};

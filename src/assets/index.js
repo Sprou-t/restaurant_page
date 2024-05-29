@@ -1,19 +1,38 @@
 // entry file
 import './home/home.css';
 import './reset.css';
-import './index.css'
+import './index.css';
+import './about/about.css';
 
-import { appendElements } from './home/home';
+import { loadHomePage } from './home/home';
+import { loadAboutPage } from './about/about';
 
-const listItems = document.querySelectorAll('ul li');
+const navItems = document.querySelectorAll('ul li');
+const pageContent = document.querySelector('#content')
 
-listItems.forEach(item => {
+navItems.forEach(item => {
     item.addEventListener('click', function() {
+        //clear the content
+        pageContent.textContent = '';
         // Remove active class from all items
-        listItems.forEach(li => li.classList.remove('active'));
+        navItems.forEach(li => li.classList.remove('active'));
         // Add active class to the clicked item
-        this.classList.add('active');
+        item.classList.add('active');
+
+        //change the content
+        if (item.textContent==='Home'){
+            loadHomePage();
+        }
+
+        else if (item.textContent==='Menu'){
+            
+        }
+
+        else{
+            loadAboutPage();
+        }
     });
 });
 
-appendElements();
+
+
