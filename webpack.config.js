@@ -40,7 +40,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
         template: './src/index.html',
-        filename: 'new-index.html'
+        filename: 'index.html'
 //If we had our own dist/index.html then it would be overwritten! In order to preserve our own HTML, 
 //we provide webpack with a template html file in src, then specify the o/p html filename
     }),

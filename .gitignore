@@ -1,3 +1,2 @@
 # Without a leading slash, the pattern will match the specified files or directories at any level within the repository.
 node_modules/
-dist/
