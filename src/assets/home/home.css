@@ -1,9 +1,13 @@
 
-.firstSentence{
+.firstSentence1,.firstSentence2,.firstSentence3{
     font-family: 'cursive_font';
     font-weight: 600;
     font-size: 1.5rem;
     margin-bottom: 5px;
+}
+
+.firstSentence2{
+    color: orange;
 }
 
 .secondSentence{

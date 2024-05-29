@@ -1,0 +1,34 @@
+/* use grid layout for 2 by 2 */
+.menuSection{
+    display: grid;
+    width: 550px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.menuCard{
+    width: 240px;
+    height: 250px;
+    padding: 0.5rem;
+    background-color: var(--content-cover-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.menuCard .pic{
+    width: 100%;
+    height: 70%;
+    
+}
+
+.menuCard .price{
+    margin: auto auto; /* centers box */
+    background-color: orange;
+    width: 50px;
+    border-radius: 5px;
+}

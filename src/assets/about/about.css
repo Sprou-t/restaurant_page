@@ -1,3 +1,4 @@
-.about{
-    background-color: rgba(0, 0, 0, 0.314);
+#content > .about{
+    background-color: var(--content-cover-color);
+    width: 70ch;
 }
